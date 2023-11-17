@@ -26,6 +26,7 @@
             <version>1.18.30</version>
         </dependency>
 
+
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -48,12 +49,5 @@
     </dependencies>
     <build>
         <finalName>spring-module-arch</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.3.0</version>
-            </plugin>
-        </plugins>
     </build>
 </project>
