@@ -1,7 +1,7 @@
-package com.unistmo.controller;
+package com.unistmo.controller.employee;
 
 import com.unistmo.dto.EmployeeDTO;
-import com.unistmo.service.EmployeeService;
+import com.unistmo.service.employee.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
