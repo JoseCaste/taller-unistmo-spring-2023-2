@@ -10,6 +10,8 @@ import com.unistmo.service.ServiceUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProductService implements ICrudOperation<ProductDTO> {
     private ProductRepository productRepository;
@@ -41,5 +43,10 @@ public class ProductService implements ICrudOperation<ProductDTO> {
     @Override
     public ProductDTO updateItem(ProductDTO itemToUpdate) {
         return null;
+    }
+
+    @Override
+    public List<?> getAllProducts() {
+        return productRepository.findAll();
     }
 }
