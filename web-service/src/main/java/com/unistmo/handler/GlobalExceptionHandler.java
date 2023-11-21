@@ -1,5 +1,7 @@
 package com.unistmo.handler;
 
+import com.unistmo.exception.ControllerException;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -28,5 +30,16 @@ public class GlobalExceptionHandler {
         });
 
         return listError;
+    }
+
+    @ExceptionHandler(ControllerException.class)
+    public ControllerDetailError controllerError(ControllerException controllerException){
+        ControllerDetailError controllerDetailError = new ControllerDetailError();
+
+        controllerDetailError.setDate(LocalDateTime.now());
+        controllerDetailError.setMessage(controllerDetailError.getMessage());
+        controllerDetailError.setStatusCode(HttpStatus.NOT_FOUND);
+
+        return controllerDetailError;
     }
 }

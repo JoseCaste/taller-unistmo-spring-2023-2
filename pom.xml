@@ -9,8 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>dao</module>
+        <module>common-util</module>
+
         <module>web-service</module>
+        <module>dao</module>
     </modules>
 
     <properties>
