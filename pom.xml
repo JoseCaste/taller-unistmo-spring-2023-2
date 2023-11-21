@@ -10,9 +10,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>common-util</module>
-
         <module>web-service</module>
         <module>dao</module>
+        <module>static</module>
     </modules>
 
     <properties>

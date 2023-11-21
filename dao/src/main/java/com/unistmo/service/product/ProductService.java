@@ -3,6 +3,7 @@ package com.unistmo.service.product;
 import com.unistmo.dto.ProductDTO;
 import com.unistmo.entity.Product;
 import com.unistmo.exception.ControllerException;
+import com.unistmo.fields.STATIC;
 import com.unistmo.operation.crud.ICrudOperation;
 import com.unistmo.repository.product.ProductRepository;
 import com.unistmo.service.ServiceUtils;
@@ -26,6 +27,7 @@ public class ProductService implements ICrudOperation<ProductDTO> {
                 .build());
 
         item.setCreatedDate(product.getCreatedDate());
+        item.setStaticMessage(STATIC.MESSAGE_TO_COMPLETE);
         return item;
     }
 
