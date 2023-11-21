@@ -10,4 +10,5 @@ public class ProductDTO {
 
     private String productName;
     private Date createdDate;
+    private String staticMessage;
 }

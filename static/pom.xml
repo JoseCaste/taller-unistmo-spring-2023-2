@@ -6,8 +6,8 @@
         <artifactId>maven-test</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>common-util</artifactId>
-    <name>common-util</name>
+    <artifactId>static</artifactId>
+    <name>Archetype - static</name>
     <packaging>jar</packaging>
     <url>http://maven.apache.org</url>
 </project>

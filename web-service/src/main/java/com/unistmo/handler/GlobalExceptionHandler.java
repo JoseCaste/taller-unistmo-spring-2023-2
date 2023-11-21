@@ -37,7 +37,7 @@ public class GlobalExceptionHandler {
         ControllerDetailError controllerDetailError = new ControllerDetailError();
 
         controllerDetailError.setDate(LocalDateTime.now());
-        controllerDetailError.setMessage(controllerDetailError.getMessage());
+        controllerDetailError.setMessage(controllerException.getMessage());
         controllerDetailError.setStatusCode(HttpStatus.NOT_FOUND);
 
         return controllerDetailError;
