@@ -9,5 +9,5 @@ import java.util.List;
 public interface EmployeeService {
     List<Employee> getEmployeesList();
 
-    Object saveEmployee(EmployeeDTO employeeDTO);
+    String saveEmployee(EmployeeDTO employeeDTO);
 }

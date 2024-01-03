@@ -7,12 +7,21 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 @SpringBootApplication
 public class WebService extends SpringBootServletInitializer {
-    public static void main(String[] args) {
+    /**
+     * Clase main.
+     * @param args
+     */
+    public static void main(final String[] args) {
         SpringApplication.run(WebService.class, args);
     }
 
+    /**
+     * Configura el proyecto para ser deployado en un application server.
+     * @param builder a builder for the application context
+     * @return
+     */
     @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+    protected SpringApplicationBuilder configure(final SpringApplicationBuilder builder) {
         return builder.sources(WebService.class);
     }
 }
