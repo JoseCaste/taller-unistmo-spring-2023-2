@@ -8,7 +8,7 @@
     </parent>
     <artifactId>web-service</artifactId>
     <name>web-service</name>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <url>http://maven.apache.org</url>
 
     <dependencies>
